@@ -1,6 +1,5 @@
 import express from "express";
 import { createServer } from "node:http";
-import { Server } from "socket.io";
 import mongoose from "mongoose";
 import cors from "cors";
 import connectToSocket  from "./controllers/SocketManner.js";
@@ -17,10 +16,10 @@ app.use(express.urlencoded({limit : "40kb", extended:true}));
 app.use("/api/v1/users" , userRoutes);
 
 
-
+const mongo_url = process.env.MONGO_URl;
 const start = async () => {
   const connectionDb = await mongoose.connect(
-    "mongodb+srv://PriyanshuVideoCall:PriyanshuVideoCall@videocall.1342nni.mongodb.net/?retryWrites=true&w=majority&appName=VideoCall"
+    mongo_url
   );
   console.log(`MONGO Connected DB HOst : ${connectionDb.connection.host}`);
   
