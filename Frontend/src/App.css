@@ -1,0 +1,94 @@
+
+.LandingPageContainer{
+  width: 100vw;
+  height: 100vh;
+  background: url("/public/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.LandingPageContainer nav {
+  padding-inline: 1.2rem;
+  padding-block: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+.LandingPageContainer nav h2{
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.LandingPageContainer nav .navlist{
+  display: flex;
+  gap: 1.6rem ;
+  cursor: pointer;
+}
+
+.landingPageMainContainer{
+  display: flex;
+  justify-content: space-between;
+  height: 70vh;
+  padding-inline: 3rem;
+  align-items: center;
+}
+
+.connectText{
+width: 50%;
+}
+
+.connectText h1{
+  font-size: 5rem ;
+}
+
+.connectText p{
+  margin-top: 2rem;
+  font-size: 22px;
+}
+
+.mobileFoto img{
+  height: 70vh;
+  width: auto;
+}
+
+.landingPageMainContainer > div:nth-child(1) div[role='button']{
+  background-color: #D97500;
+padding:1rem;
+width: fit-content;
+margin-top:15px;
+border-radius: 2px;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 20px;
+  text-align: center;
+
+}
+.meetContainer {
+  display: flex;
+  padding-inline: 20px;
+  height: 80vh;
+  gap: 10vw;
+  justify-content: center;
+}
+
+.leftPanel {
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+}
+
+.rightPanel {
+  display: flex;
+  align-items: center;
+}
+
+.rightPanel > img {
+  width: 30vw;
+  height: auto;
+  border-radius: 20px;
+}
